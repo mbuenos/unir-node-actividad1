@@ -533,6 +533,9 @@ app.get('/logout', function (req, res) {
     req.session.usuario = null;
     res.redirect("/foro");
 });
-var server = app.listen(3000, function () {
-	  console.log('Servidor ejecutandose en localhost:3000');
-});
+app.set( 'port', ( process.env.PORT || 5000 ));
+
+// Start node server
+app.listen( app.get( 'port' ), function() {
+  console.log( 'el servidor listo ' + app.get( 'port' ));
+  });
