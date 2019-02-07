@@ -1,0 +1,42 @@
+{% extends "base.html" %}
+{% block titulo  %}
+    Admisiones
+{% endblock %}
+{% block tituloH1  %}
+    Admisiones
+{% endblock %}
+{% block contenido_principal %}
+            <div class="container-fluid">
+                <div class="row align-items-center">
+                    <div class="col-sm-12">
+                        <hr>
+                        <img class="img-fluid mx-auto d-block" src="recursos/proceso.jpg" alt="Proceso - Pasos a seguir para inscribir a un futuro estudiante. 1 Llenar el folleto de admisiones. 2 Copia a color de cedula del aspirante, de la madre y del padre. 3 Foto tamaño Carnet a color. 4 Copia de Libreta actualizada en caso de tener escolaridad, traer copia adicional de libreta de 2 años anteriores. 5 Asistir a entrevista con el aspirante. 6 Rendir las pruebas de admisión.">
+                        <hr>
+                    </div>
+                    
+                    <div class="col-sm-12 col-md-6">                       
+                        <p>*Para estudiantes extranjeros incluir adicionalmente el Certificado de Equivalencia de Estudios, otorgado por el Distrito de Educación de Ecuador.</p>
+                        <a href="recursos/folleto.pdf"><button type="button" class="btn btn-primary btn-sm btn-block">Descargar Folleto de Admisión</button></a>
+                        <hr>
+                        <h4 class="text-center">
+                            Audio de presentación Institucional
+                        </h4>
+                        <audio controls class="mx-auto d-block">
+                          <source src="recursos/audio.mp3" type="audio/mp3">
+                          Tu ecplorador no soporta el elemnto audio.
+                        </audio>    
+                        <hr>
+                    </div>
+                    <div class="col-sm-12 col-md-6">
+                        <h4 class="text-center">Vídeo Institucional</h4>
+                        <video  controls class="mx-auto d-block embed-responsive">
+                            <source src="recursos/video.mp4" type="video/mp4">
+                            Tu navegador no soporta HTML5 video.
+                        </video>
+                    </div>
+                    <div class="col-sm-12">
+                        <hr>
+                    </div>
+                </div>
+            </div>
+{% endblock %}        

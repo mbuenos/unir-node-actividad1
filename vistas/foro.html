@@ -1,0 +1,40 @@
+{% extends "base.html" %}
+{% block titulo  %}
+    Foro
+{% endblock %}
+{% block tituloH1  %}
+    Foro - Preguntas
+{% endblock %}
+{% block contenido_principal %}
+<div class="container-fluid">
+    <div class="row align-items-center">
+
+        <div class="col-sm-12">
+            <br>
+            <a href="/logout"><h5 class="text-right">Salir</h5></a>
+            <hr>
+            <a href="/foro/agregar"><button type="button" class="btn btn-primary btn-sm">Nueva Pregunta</button></a>
+            <hr>
+            
+        </div>
+        {% for pregunta in preguntas %}
+        <div class="col-sm-1">
+            
+        </div>
+        <div class="col-sm-11">
+            <h6><b>{{ pregunta.pregunta }}</b> <a class="btn btn-primary btn-sm" href="/foro/respuestas/{{ pregunta._id.toString()}}">Respuestas</a> 
+                            {% if pregunta.id_usuario===usuario %}
+                            <a href="/foro/modificar/{{ pregunta._id.toString()}}"
+                               class="btn btn-success btn-sm">Modificar</a>
+                            <a href="/foro/eliminar/{{ pregunta._id.toString()}}" 
+                               class="btn btn-danger btn-sm">Eliminar</a> </h6>
+            <hr>            {% endif %}
+            
+            
+        </div>
+        
+      {% endfor %}
+       
+    </div>
+</div>
+{% endblock %}

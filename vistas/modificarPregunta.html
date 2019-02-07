@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+{% block titulo  %}
+    Modificar Pregunta
+{% endblock %}
+{% block tituloH1  %}
+    Modificar Pregunta
+{% endblock %}
+{% block contenido_principal %}
+    <div class="container-fluid">
+        <div class="row align-items-center">
+            <div class="col-sm-12"><br><h2 class="text-center">
+                Realiza el cambio requerido
+                </h2></div>
+            <div class="col-sm-12 col-md-3">
+            </div>
+            <div class="col-sm-12 col-md-6">
+                
+                <br>
+               <form method="post" action="/foro/modificar/{{ pregunta._id.toString()}}" >
+                   <div class="form-group">
+                        <label class="importante" for="pregunta">Pregunta:</label>
+                      <textarea id="pregunta" name="pregunta" class="form-control" > {{ pregunta.pregunta }}</textarea>
+                    </div>
+                    
+                    
+
+                    <button type="submit" class="btn btn-primary">Guardar Cambios</button>
+                    <a href="/foro"><button type="button" class="btn btn-primary ">Cancelar</button></a>
+                </form>
+                <br>
+            </div>
+            
+                <div class="col-sm-12 col-md-3">
+                    
+                </div>
+            
+        </div>
+    </div>
+{% endblock %}

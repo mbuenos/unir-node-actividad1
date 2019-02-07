@@ -1,0 +1,72 @@
+{% extends "base.html" %}
+{% block titulo  %}
+    Contáctanos
+{% endblock %}
+{% block tituloH1  %}
+    Contáctanos
+{% endblock %}
+{% block contenido_principal %}
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <hr>
+                    </div>
+                    <div class="col-sm-12">
+                        <h2 class="text-center">Sede Samborondón</h2>
+                        <img class="img-fluid mx-auto d-block" src="recursos/samborondon.png" alt="Mapa de la sede Samborondón">
+                        <h2 class="text-center">Sede Centenario</h2>
+                        <img class="img-fluid mx-auto d-block" src="recursos/centenario.png" alt="Mapa de la sede Centenario"> 
+                        <hr>
+                    </div>
+                    <div class="col-sm-12 col-md-6 ">
+                        <hr>
+                        <h2 class="text-center">Contáctanos</h2>
+                        <p>Por favor, rellene el siguiente formulario para contactarnos en línea. Responderemos dentro de 24 horas.</p>
+                        <hr>
+                        <form action="">
+                            <div class="form-group">
+                                <label class="importante" for="nombre">Nombre (Obligatorio):</label>
+                              <input type="text" id="nombre" name="nombre" class="form-control" required/>
+                            </div>
+                            <div class="form-group">
+                              <label class="importante" for="email">E-mail (Obligatorio)</label>
+                              <input type="email" id="email" name="email" class="form-control" required/>
+                            </div>
+                            <div class="form-group">
+                              <label for="mensaje">Mensaje:</label>
+                              <textarea id="mensaje" name="mensaje" class="form-control"></textarea>
+                            </div>
+                            
+                            <button type="submit" class="btn btn-primary btn-block">Enviar consulta</button>
+                        </form>
+                        
+                    </div>
+                    <div class="col-lg-1 d-none d-lg-block">
+                        
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-4">
+                        <hr>
+                        <h3 class="text-center">Sede Samborondón</h3>
+                        <p class="text-center">+(593) 04 3707888 ext 102</p>
+                        <hr>
+                        <p class="text-center">Km 3.5 vía Samborondón</p>
+                        <hr>
+                        <p class="text-center">info@liceopanamericano.edu.ec</p>
+                        <hr>
+                        <h3 class="text-center">Sede Centenario</h3>
+                        <p class="text-center">+(593) 04 3707888 ext 201</p>
+                        <hr>
+                        <p class="text-center">Dolores Sucre 302 y Nicolás Augusto González</p>
+                        <hr>
+                        <p class="text-center">infocentenario@liceopanamericano.edu.ec</p>
+                        
+                    </div>
+                    <div class="col-lg-1 d-none d-lg-block">
+                        
+                    </div>
+                    <div class="col-sm-12">
+                        <hr>
+                    </div>
+                </div>
+            </div>
+{% endblock %} 

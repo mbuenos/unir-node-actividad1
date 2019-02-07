@@ -1,0 +1,45 @@
+{% extends "base.html" %}
+{% block titulo  %}
+    Iniciar Sesión
+{% endblock %}
+{% block tituloH1  %}
+    Iniciar Sesión
+{% endblock %}
+{% block contenido_principal %}
+    <div class="container-fluid">
+        <div class="row align-items-center">
+            <div class="col-sm-12"><br><h2 class="text-center">
+                Introduce la información de registro para crear un nuevo usuario
+                </h2></div>
+            <div class="col-sm-12 col-md-5">
+            </div>
+            <div class="col-sm-12 col-md-2">
+                
+                <br>
+               <form method="post" action="/usuario" >
+                   <div class="form-group">
+                        <label class="importante" for="nombre">Nombre:</label>
+                      <input type="text" id="nombre" name="nombre" class="form-control" required/>
+                    </div>
+                    <div class="form-group">
+                        <label class="importante" for="email">Email:</label>
+                      <input type="email" id="email" name="email" class="form-control" required/>
+                    </div>
+                    <div class="form-group">
+                      <label class="importante" for="password">Contraseña:</label>
+                      <input type="password" id="password" name="password" class="form-control" required/>
+                    </div>
+                    
+
+                    <button type="submit" class="btn btn-primary btn-block">Registrar Usuario</button>
+                </form>
+                <br>
+            </div>
+            
+                <div class="col-sm-12 col-md-5">
+                    
+                </div>
+            
+        </div>
+    </div>
+{% endblock %}

@@ -1,0 +1,58 @@
+{% extends "base.html" %}
+{% block titulo  %}
+    Iniciar Sesión
+{% endblock %}
+{% block tituloH1  %}
+    Iniciar Sesión
+{% endblock %}
+{% block contenido_principal %}
+    <div class="container-fluid">
+        <div class="row align-items-center">
+            {% if error %}
+                <div class="col-sm-12">
+                    <h3 class="text-center">El usuario y la contraseña no coinciden</h3>
+                </div>
+            {% endif %}
+            <div class="col-sm-12 col-md-5">
+            </div>
+            <div class="col-sm-12 col-md-2">
+                <br>
+                <form method="post" action="/login">
+                    <div class="form-group">
+                        <label class="importante" for="email">Email:</label>
+                      <input type="email" id="email" name="email" class="form-control" required/>
+                    </div>
+                    <div class="form-group">
+                      <label class="importante" for="password">Contraseña:</label>
+                      <input type="password" id="password" name="password" class="form-control" required/>
+                    </div>
+                    
+
+                    <button type="submit" class="btn btn-primary btn-block">Iniciar Sesión</button>
+                </form>
+                <br>
+            </div>
+            
+                <div class="col-sm-12 col-md-5">
+                    
+                </div>
+            <div class="col-sm-12">
+                <div class="row">
+                <div class="col-sm-12 col-md-5">
+                    
+                </div>
+                <div class="col-sm-6 col-md-1">
+                    <a  href="registro">
+                    Regístrate</a>
+                </div>
+            
+                <div class="col-sm-6 col-md-1">
+                    <a class="text-right" href="#">
+                    Recordar contraseña</a>
+                </div>
+                </div>
+                <br>
+            </div>
+        </div>
+    </div>
+{% endblock %}

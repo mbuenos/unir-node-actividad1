@@ -1,0 +1,39 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 19/01/2019, 12:02:11
+    Author     : Marco Bueno
+*/
+
+header {
+    background-color: #034F84;
+}
+header h1, hr{
+    color: #ffffff;
+}
+
+footer{
+    background-color: #034F84;
+    color: #ffffff;
+}
+
+footer table, .tabla-nivel, .tabla-somos, .tabla-valores, .tabla-nivel-detalle,
+.tabla-admisiones, .tabla-autoridades, .tabla-formulario textarea, .tabla-formulario input{
+    width: 100%;
+}
+footer table .td-foot1{
+    width: 8%
+}
+footer table .td-foot2{
+    width: 32%
+}
+footer table .td-foot3, .tabla-nivel-detalle .td-nivel-detalle{
+    text-align: center;
+    width: 60%
+}
+.importante{
+    color: red;
+}

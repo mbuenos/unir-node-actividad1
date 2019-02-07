@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<!--
+Creado por Marco Bueno
+-->
+<html lang="es">
+    <head>
+        <title>{% block titulo %} Unidad Educativa Particular Bilingüe Liceo Panamericano {% endblock %}</title>
+        <link rel="icon" type="image/png" href="/recursos/logoP.png" />
+        <link rel="stylesheet" href="/css/bootstrap.css"> 
+        <link rel="stylesheet" href="/css/estilo.css"> 
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    </head>
+    <body>
+        <header>
+            <section>
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                <a class="navbar-brand" href="/"><img src="/recursos/logo.png" alt="Logo - Liceo Panamericano" 
+                         height="70"></a>
+                
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                      <a class="nav-link" href="/">Inicio <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Niveles
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                          <a class="dropdown-item" href="/nivel-inicial">Nivel Inicial</a>
+                          <div class="dropdown-divider"></div>
+                          <a class="dropdown-item" href="/primaria">Primaria</a>
+                          <div class="dropdown-divider"></div>
+                          <a class="dropdown-item" href="/secundaria">Secundaria</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="/admisiones">Admisiones</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="/autoridades">Autoridades</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="/foro"> Foro </a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="/contactanos"> Contáctanos </a>
+                    </li>
+                    
+                  </ul>
+                  
+                </div>
+              </nav>
+            </section>
+            <section>
+                <div class="container-fluid">
+                    <div class="row">
+                 
+                        <div class="col-sm-12">
+                        <h1 class="text-center">{% block tituloH1 %} Unidad Educativa Particular Bilingüe Liceo Panamericano {% endblock %}</h1>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </header>
+        <main>
+            {% block contenido_principal %}
+                            
+            {% endblock %}
+            
+        </main>
+         <footer>
+            <div class="container-fluid">
+                <div class="row align-items-center" >
+                    <div class="col-md-2 col-sm-3 d-none d-md-block">
+                        <img src="/recursos/logo.png" alt="Liceo Panamericano" 
+                         class="img-fluid">
+                    </div>
+                    <div class="col-md-4 d-none d-md-block">
+                        Somos un centro educativo que marca la diferencia, por su compromiso en la formación del estudiante, como un ser humano, donde la Educación en Valores y el sentido de familia, tienen un rol prioritario.
+                    </div>
+                    
+                    <div class="col-md-6 col-sm-9 text-right">
+                        Unidad Educativa Particular Bilingüe Liceo Panamericano © 2018
+                    </div>
+                </div>
+            </div>
+
+            
+        </footer>
+        <script src="/js/jquery-3.3.1.js"> </script>
+        <script src="/js/bootstrap.js"></script>
+        {% block scripts %} 
+        {% endblock %}
+    </body>
+</html>
